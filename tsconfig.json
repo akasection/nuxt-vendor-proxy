@@ -1,0 +1,34 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "importHelpers": true,
+    "removeComments": true,
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
+    "esModuleInterop": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "strict": false,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true, // Enabled when ready
+    "noImplicitAny": true, // Enabled when ready
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "allowSyntheticDefaultImports": true,
+    "declaration": true,
+    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "types": [
+      "@nuxt/types",
+      "@nuxt/types/app/vue",
+      "node"
+    ]
+  },
+  "exclude": ["node_modules"]
+}
