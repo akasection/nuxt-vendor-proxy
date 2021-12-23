@@ -3,17 +3,16 @@ import { existsSync, ensureDirSync, removeSync, ensureSymlinkSync, lstatSync } f
 import consola from 'consola'
 import chalk from 'chalk'
 import { Module } from '@nuxt/types'
-import { VendorModuleOptions } from './types/vendor'
+import { VendorModuleOptions } from 'types/vendor'
 
-declare const MODULE_NAME = 'vendor'
-
+declare const MODULE_NAME = "vendor";
 declare module '@nuxt/types' {
-  interface NuxtConfig {
-    [MODULE_NAME]?: VendorModuleOptions
-  }
-  interface Configuration {
-    [MODULE_NAME]?: VendorModuleOptions
-  }
+    interface NuxtConfig {
+        [MODULE_NAME]?: VendorModuleOptions;
+    }
+    interface Configuration {
+        [MODULE_NAME]?: VendorModuleOptions;
+    }
 }
 
 const vendorMapper: Module<VendorModuleOptions> = function (options) {

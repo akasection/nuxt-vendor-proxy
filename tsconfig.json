@@ -4,14 +4,14 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": true,
     "removeComments": true,
-    "target": "ES2018",
+    "target": "ES2015",
     "module": "ESNext",
     "moduleResolution": "Node",
     "lib": ["ESNext", "ESNext.AsyncIterable", "DOM"],
     "esModuleInterop": true,
     "allowJs": true,
-    "sourceMap": true,
-    "strict": false,
+    "outDir": "./dist",
+    "strict": true,
     "alwaysStrict": true,
     "strictBindCallApply": true,
     "strictNullChecks": true,
@@ -30,5 +30,5 @@
       "node"
     ]
   },
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "dist"]
 }
